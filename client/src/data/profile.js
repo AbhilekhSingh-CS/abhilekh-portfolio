@@ -12,6 +12,5 @@ export const profile = {
   github: 'https://github.com/AbhilekhSingh-CS',
   linkedin: 'https://www.linkedin.com/in/abhilekhsingh',
   leetcode: 'https://leetcode.com/u/abhilekhsinghcs/',
-  // TODO: confirm your channel handle
-  youtube: 'https://www.youtube.com/@organizepixels',
+  youtube: 'https://www.youtube.com/@OrganizePixels',
 };
