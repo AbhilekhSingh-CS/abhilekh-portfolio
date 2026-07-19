@@ -1,9 +1,16 @@
+/* The bar is fixed to the viewport, so it stays visible at any scroll depth.
+   Its height lives in --navbar-height (index.css): the page body is padded by
+   the same amount so content never starts hidden underneath it. */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 20;
+  height: var(--navbar-height);
   background: rgba(250, 249, 246, 0.93);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -12,13 +19,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  height: 100%;
 }
 
 .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
   color: var(--ink);
 }
@@ -27,15 +36,24 @@
   text-decoration: none;
 }
 
+.navbar-photo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
 .navbar-links {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 22px;
 }
 
 .navbar-links a {
   color: var(--muted);
   font-size: 15px;
+  padding: 6px 0;
 }
 
 .navbar-links a:hover {
@@ -43,14 +61,30 @@
   text-decoration: none;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 820px) {
+  .navbar {
+    height: var(--navbar-height-mobile);
+  }
+
   .navbar-inner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .navbar-photo {
+    width: 34px;
+    height: 34px;
   }
 
   .navbar-links {
-    gap: 16px;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+    padding: 2px 0;
   }
 }

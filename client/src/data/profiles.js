@@ -9,7 +9,7 @@ export const codingProfiles = [
   },
   {
     name: 'LeetCode',
-    handle: 'update-me',
+    handle: 'abhilekhsinghcs',
     url: profile.leetcode,
     blurb: '400+ DSA problems solved across arrays, trees, graphs, DP, stacks and queues.',
   },
@@ -18,11 +18,5 @@ export const codingProfiles = [
     handle: 'abhilekhsingh',
     url: profile.linkedin,
     blurb: 'Education, experience and the quickest way to see what I am up to professionally.',
-  },
-  {
-    name: 'YouTube',
-    handle: 'Organize Pixels',
-    url: profile.youtube,
-    blurb: '2,200+ subscribers. DaVinci Resolve tutorials and editing content, including two brand collaborations.',
   },
 ];

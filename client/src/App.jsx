@@ -4,6 +4,7 @@ import Projects from './components/Projects.jsx';
 import Skills from './components/Skills.jsx';
 import Profiles from './components/Profiles.jsx';
 import Certificates from './components/Certificates.jsx';
+import Extracurriculars from './components/Extracurriculars.jsx';
 import Contact from './components/Contact.jsx';
 import { profile } from './data/profile';
 
@@ -17,6 +18,7 @@ function App() {
         <Skills />
         <Profiles />
         <Certificates />
+        <Extracurriculars />
         <Contact />
       </main>
       <footer className="site-footer">
