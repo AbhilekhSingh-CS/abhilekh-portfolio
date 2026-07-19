@@ -1,0 +1,42 @@
+.cert-list {
+  list-style: none;
+}
+
+.cert-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cert-row:first-child {
+  padding-top: 0;
+}
+
+.cert-row:last-child {
+  border-bottom: none;
+}
+
+.cert-title {
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.cert-issuer {
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+.cert-right {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  font-size: 14.5px;
+}
+
+.cert-year {
+  color: var(--muted);
+}

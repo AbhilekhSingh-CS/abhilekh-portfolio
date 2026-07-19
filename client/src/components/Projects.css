@@ -1,0 +1,43 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.project-card h3 {
+  font-size: 20px;
+}
+
+.project-tagline {
+  color: var(--muted);
+  font-size: 14.5px;
+  flex-grow: 1;
+}
+
+.project-more {
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.projects-note {
+  color: var(--muted);
+  margin-bottom: 20px;
+}

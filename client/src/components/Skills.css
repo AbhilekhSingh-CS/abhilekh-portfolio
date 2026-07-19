@@ -1,0 +1,28 @@
+.skills-row {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.skills-row:first-child {
+  padding-top: 0;
+}
+
+.skills-row:last-child {
+  border-bottom: none;
+}
+
+.skills-group {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+@media (max-width: 640px) {
+  .skills-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
